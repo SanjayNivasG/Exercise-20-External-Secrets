@@ -322,37 +322,6 @@ kubectl get pods -n external-secrets
 
 ---
 
-## Interview Questions
-
-### Why use AWS Secrets Manager?
-
-To securely store and centrally manage sensitive application credentials.
-
----
-
-### Why use External Secrets Operator?
-
-It automatically synchronizes secrets from external secret stores into Kubernetes.
-
----
-
-### What is SecretStore?
-
-SecretStore defines how the External Secrets Operator authenticates with the external secret provider.
-
----
-
-### What is ExternalSecret?
-
-ExternalSecret maps data from AWS Secrets Manager into a Kubernetes Secret.
-
----
-
-### Why not store passwords directly in Kubernetes?
-
-Because Kubernetes Secrets are only Base64 encoded and are not intended to be the primary secure storage solution. Using AWS Secrets Manager improves security and simplifies secret rotation.
-
----
 
 ## Conclusion
 
